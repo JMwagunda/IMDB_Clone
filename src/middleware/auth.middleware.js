@@ -1,9 +1,6 @@
 const jwt = require("jsonwebtoken");
 
 
-
-
-
 const isAdminAuthourized = (req,res, next) =>{
     const token = req.headers.authourization.split("").splice(7).join("");
 
